@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    color: white;
+    font-size: 16px;
+    background-image: url('bg-intro-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container {
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%
+}
+
+
+.box {
+    display: grid;
+    padding: 30px;
+    padding-bottom: 15px;
+    background-color: white;
+    border-radius: 5px;
+    height: 35vh;
+    text-align: center;
+}
+
+
+.right {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.left {
+    width: 50%;
+    margin-right: 20px;
+}
+
+
+.try {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+}
+
+
+span {
+    color: lightgray
+}
+
+
+input {
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid lightgray;
+    margin-bottom: 5px;
+}
+
+input:hover {
+    border: 1px solid black;
+}
+
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+
+.box p {
+    color:darkgrey;
+    font-size: 10px;
+    display: flex;
+    display: inline;
+    justify-content: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (orientation: portrait) {
+    .container {
+        display: grid;
+        justify-items: center; 
+        padding: 49px;
+        text-align: center;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    
+    .right {
+        width: 100%;
+    }
+
+    .box p {
+        display: grid;
+    }
+
+    .box {
+        height: 45vh;
+    }
+}
